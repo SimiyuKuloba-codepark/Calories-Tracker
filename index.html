@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fontawesome-icon-links -->
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- googlefont stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Gloria+Hallelujah&family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Tracalorie I Meal & Calorie Tracker</title>
+</head>
+<body>
+  <!-- navbar -->
+  <div id="navbar">
+    <div class="nav-container">
+      <div class="logo">Tracalorie</div>
+      <div class="btn-link">
+        <div class="btn clear-btn">CLEAR ALL</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- input-section -->
+  <div id="add">
+    <div class="add-container">
+      <h2>Add Meal / Food Item</h2>
+      <div class="form">
+        <div class="form-section">
+          <label for="meal">Meal</label>
+          <input class="meal" type="text" placeholder="Add Item">
+        </div>
+        <div class="form-section">
+          <label for="calories">Calories</label>
+          <input class="calories" type="number" placeholder="Add Calories">
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="btn add-btn"><i class="fa-solid fa-plus"></i> ADD MEAL</div>
+        <br>
+        <!-- change-btns -->
+        <div class="update-btns">
+          <div class="change-btns">
+            <div class="btn update-btn"><i class="fa-solid fa-pen-to-square"></i> UPDATE MEAL</div>
+            <div class="btn delete-btn"><i class="fa-solid fa-xmark"></i> DELETE MEAL</div>
+          </div>
+          <div class="dir-btn">
+            <div class="btn back-btn"><i class="fa-solid fa-circle-chevron-left"></i> BACK</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- results -->
+  <div id="results">
+    <div class="results-container">
+      <div class="heading">
+        <h1>Total Calories: <span class="total-calories"></span></h1>
+      </div>
+      <ul class="results">
+        <!-- <li>
+          <div class="meal">
+            <strong>Steak Dinner:</strong>
+            <em>900 items</em>
+          </div>
+          <span><i class="edit-item fa-solid fa-pencil"></i></span>
+        </li> -->
+        <!-- <li>
+          <div class="meal">
+            <strong>Ice Cream:</strong>
+            <em>500 items</em>
+          </div>
+          <span><i class="edit-item fa-solid fa-pencil"></i></span>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
